@@ -14,19 +14,23 @@ int main() {
         scanf("%d", &opcao);
         
          if(opcao == 1){
-            printf("Seu saldo é de R$%.3f", saldo);
+            printf("Seu saldo é de R$%.3f!\n", saldo);
         }
         else if(opcao == 2) {
-            printf("Digite o valor do depósito: ");
-            scanf("%f", &deposito);
+            printf("Digite o valor do depósito: R$");
+            scanf("\n%f", &deposito);
             saldo = saldo + deposito;
         }
+        
+        else if(opcao == 0){
+            
+        }
         else{
-            printf("Opção Inválida!");
+            printf("Opção Inválida!\n");
         }
    }
    
-   while(opcao = 0);
+   while(opcao != 0);
     printf("\nPrograma Encerrado.");
     return 0;
 }
